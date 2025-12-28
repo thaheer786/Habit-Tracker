@@ -13,10 +13,34 @@ document.addEventListener('DOMContentLoaded', () => {
     updateStats();
     initializeCharts();
     renderCalendar();
+    initTheme();
+    bindThemeSelector();
     
     // Auto-save every 30 seconds
     setInterval(saveData, 30000);
 });
+
+// Theme Handling
+function initTheme() {
+    const saved = localStorage.getItem('theme') || 'neon';
+    setTheme(saved);
+    const select = document.getElementById('themeSelect');
+    if (select) select.value = saved;
+}
+
+function bindThemeSelector() {
+    const select = document.getElementById('themeSelect');
+    if (!select) return;
+    select.addEventListener('change', (e) => {
+        const theme = e.target.value;
+        setTheme(theme);
+        localStorage.setItem('theme', theme);
+    });
+}
+
+function setTheme(name) {
+    document.documentElement.setAttribute('data-theme', name);
+}
 
 // Initialize Sample Data (only on first load)
 function initializeSampleData() {

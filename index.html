@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quest Logger - Gamer's Productivity Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -19,7 +19,20 @@
                 <span class="logo-icon">⚔️</span>
                 <h1>QUEST LOGGER</h1>
             </div>
-            <div class="date-display" id="currentDate"></div>
+            <div class="header-right">
+                <div class="date-display" id="currentDate"></div>
+                <div class="theme-controls">
+                    <label for="themeSelect" class="sr-only">Theme</label>
+                    <select id="themeSelect" class="input-field theme-select" aria-label="Select Theme">
+                        <option value="neon">Neon</option>
+                        <option value="dark">Dark</option>
+                        <option value="midnight">Midnight Purple</option>
+                        <option value="pastel">Pastel</option>
+                        <option value="light">Light</option>
+                        <option value="solar">Solarized</option>
+                    </select>
+                </div>
+            </div>
         </header>
 
         <!-- Stats Bar -->

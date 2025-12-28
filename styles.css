@@ -1,4 +1,5 @@
 :root {
+    /* Default theme: Neon */
     --bg-dark: #0a0e27;
     --bg-card: #1a1f3a;
     --bg-hover: #252b4a;
@@ -15,6 +16,96 @@
     --shadow-glow-purple: 0 0 20px rgba(178, 75, 243, 0.3);
 }
 
+/* Dark Minimal */
+:root[data-theme="dark"] {
+    --bg-dark: #0b0b12;
+    --bg-card: #141420;
+    --bg-hover: #1c1c2b;
+    --neon-green: #7bd88f;
+    --neon-blue: #8ecae6;
+    --neon-purple: #b39ddb;
+    --neon-pink: #ff94c2;
+    --neon-yellow: #ffd166;
+    --text-primary: #f3f4f6;
+    --text-secondary: #a1a1b3;
+    --border-color: rgba(255, 255, 255, 0.14);
+    --shadow-glow: 0 10px 25px rgba(0,0,0,0.35);
+    --shadow-glow-blue: 0 10px 25px rgba(0,0,0,0.35);
+    --shadow-glow-purple: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Midnight Purple */
+:root[data-theme="midnight"] {
+    --bg-dark: #0d0a1b;
+    --bg-card: #17122b;
+    --bg-hover: #201a3a;
+    --neon-green: #a3f7bf;
+    --neon-blue: #7aa2ff;
+    --neon-purple: #9b59b6;
+    --neon-pink: #ff6bb5;
+    --neon-yellow: #f6d365;
+    --text-primary: #f0eaff;
+    --text-secondary: #bfb6d8;
+    --border-color: rgba(155, 89, 182, 0.35);
+    --shadow-glow: 0 0 25px rgba(155, 89, 182, 0.35);
+    --shadow-glow-blue: 0 0 25px rgba(122, 162, 255, 0.35);
+    --shadow-glow-purple: 0 0 25px rgba(155, 89, 182, 0.35);
+}
+
+/* Pastel */
+:root[data-theme="pastel"] {
+    --bg-dark: #f7f7fb;
+    --bg-card: #ffffff;
+    --bg-hover: #f0f2f8;
+    --neon-green: #7bd88f;
+    --neon-blue: #8ecae6;
+    --neon-purple: #b39ddb;
+    --neon-pink: #ff94c2;
+    --neon-yellow: #ffd166;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: rgba(31, 41, 55, 0.12);
+    --shadow-glow: 0 10px 30px rgba(17, 24, 39, 0.08);
+    --shadow-glow-blue: 0 10px 30px rgba(17, 24, 39, 0.08);
+    --shadow-glow-purple: 0 10px 30px rgba(17, 24, 39, 0.08);
+}
+
+/* Light */
+:root[data-theme="light"] {
+    --bg-dark: #f6f7fb;
+    --bg-card: #ffffff;
+    --bg-hover: #eef1f7;
+    --neon-green: #22c55e;
+    --neon-blue: #2563eb;
+    --neon-purple: #7c3aed;
+    --neon-pink: #db2777;
+    --neon-yellow: #f59e0b;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --border-color: rgba(17, 24, 39, 0.12);
+    --shadow-glow: 0 10px 25px rgba(17, 24, 39, 0.08);
+    --shadow-glow-blue: 0 10px 25px rgba(37, 99, 235, 0.18);
+    --shadow-glow-purple: 0 10px 25px rgba(124, 58, 237, 0.18);
+}
+
+/* Solarized */
+:root[data-theme="solar"] {
+    --bg-dark: #002b36; /* base03 */
+    --bg-card: #073642; /* base02 */
+    --bg-hover: #0b3a45;
+    --neon-green: #859900; /* green */
+    --neon-blue: #268bd2; /* blue */
+    --neon-purple: #6c71c4; /* violet */
+    --neon-pink: #d33682; /* magenta */
+    --neon-yellow: #b58900; /* yellow */
+    --text-primary: #eee8d5; /* base2 */
+    --text-secondary: #93a1a1; /* base1 */
+    --border-color: rgba(147, 161, 161, 0.35);
+    --shadow-glow: 0 0 20px rgba(147, 161, 161, 0.25);
+    --shadow-glow-blue: 0 0 20px rgba(38, 139, 210, 0.25);
+    --shadow-glow-purple: 0 0 20px rgba(108, 113, 196, 0.25);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +113,7 @@
 }
 
 body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Poppins', 'Rajdhani', sans-serif;
     background: var(--bg-dark);
     color: var(--text-primary);
     overflow-x: hidden;
@@ -44,13 +135,27 @@ body {
 }
 
 .stars {
-    background: #000 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQIW2NkYGD4z8DAwAAACQQBAQAAAAAAAElFTkSuQmCC') repeat top center;
+    /* Use themed background color instead of hard black */
+    background: var(--bg-dark) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQIW2NkYGD4z8DAwAAACQQBAQAAAAAAAElFTkSuQmCC') repeat top center;
 }
 
 .twinkling {
     background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQIW2NkYGD4z8DAwAAACQQBAQAAAAAAAElFTkSuQmCC') repeat top center;
     animation: move-twink-back 200s linear infinite;
-    opacity: 0.3;
+    opacity: 0.25;
+}
+
+/* Hide starfield overlays on light/pastel themes for clear backgrounds */
+:root[data-theme="light"] .stars,
+:root[data-theme="light"] .twinkling,
+:root[data-theme="pastel"] .stars,
+:root[data-theme="pastel"] .twinkling {
+    display: none;
+}
+
+/* Subtle starfield on solarized */
+:root[data-theme="solar"] .twinkling {
+    opacity: 0.18;
 }
 
 @keyframes move-twink-back {
@@ -73,12 +178,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
-    border: 2px solid var(--border-color);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     margin-bottom: 30px;
     box-shadow: var(--shadow-glow);
     animation: slideDown 0.6s ease-out;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .logo {
@@ -114,9 +225,31 @@ body {
     color: var(--text-secondary);
     font-weight: 600;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
-    border: 1px solid rgba(0, 255, 136, 0.2);
+    border: 1px solid var(--border-color);
+}
+
+.theme-controls {
+    display: flex;
+    align-items: center;
+}
+
+.theme-select {
+    min-width: 160px;
+    padding: 10px 12px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 /* Stats Bar */
@@ -130,9 +263,9 @@ body {
 
 .stat-card {
     background: var(--bg-card);
-    padding: 25px;
-    border-radius: 15px;
-    border: 2px solid var(--border-color);
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     gap: 20px;
@@ -198,9 +331,9 @@ body {
 .tab-btn {
     flex: 1;
     min-width: 150px;
-    padding: 15px 25px;
+    padding: 14px 22px;
     background: var(--bg-card);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     color: var(--text-secondary);
     font-size: 1.1rem;
@@ -391,7 +524,7 @@ body {
 
 .quest-item {
     background: var(--bg-card);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 20px;
     display: flex;
@@ -557,7 +690,7 @@ body {
 
 .habit-card {
     background: var(--bg-card);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 25px;
     transition: all 0.3s ease;
@@ -676,7 +809,7 @@ body {
 
 .chart-card {
     background: var(--bg-card);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 25px;
     transition: all 0.3s ease;
@@ -719,7 +852,7 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--bg-card);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 10px;
     transition: all 0.3s ease;
@@ -804,11 +937,11 @@ body {
 
 .modal-content {
     background: var(--bg-card);
-    border: 2px solid var(--neon-green);
+    border: 1px solid var(--border-color);
     border-radius: 15px;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 0 50px rgba(0, 255, 136, 0.5);
+    box-shadow: var(--shadow-glow);
     animation: modalSlideIn 0.4s ease-out;
 }
 
