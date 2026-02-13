@@ -14,7 +14,7 @@ A cyberpunk/gaming-themed productivity tracker with daily to-dos, habit tracking
 ### 🎮 Habit Tracker
 - **Daily/Weekly Habits** - Track any frequency
 - **Progress Bars** - Visual progress for each habit
-- **Streak Counter** - See your consistency with 🔥 streak tracking
+- **Streak Counter** - See your consistency with 🔥 streak tracking   
 - **Custom Icons** - Personalize with emojis
 - **Increment/Reset** - Mark progress throughout the day
 
