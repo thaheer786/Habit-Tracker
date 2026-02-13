@@ -47,7 +47,7 @@ A cyberpunk/gaming-themed productivity tracker with daily to-dos, habit tracking
 2. Opens in your default browser
 3. Start adding quests and habits!
 
-### Option 2: Live Server (Recommended)
+### Option 2: Live Server (Recommended)  
 ```bash
 # If using VS Code with Live Server extension
 1. Right-click index.html
