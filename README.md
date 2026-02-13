@@ -6,7 +6,7 @@ A cyberpunk/gaming-themed productivity tracker with daily to-dos, habit tracking
 
 ### 📜 Daily Quests (To-Do List)
 - **Add, Edit, Delete Tasks** - Full CRUD functionality  
-- **Priority Levels** - High (Legendary), Medium (Epic), Low (Common)
+- **Priority Levels** - High (Legendary), Medium (Epic), Low (Common)  
 - **XP System** - Earn XP for completing quests
 - **Checkbox Completion** - Satisfying click-to-complete with animations
 - **Today's Focus** - Only shows tasks for the current day
