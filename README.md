@@ -93,7 +93,7 @@ Then open: `http://localhost:8000`
 
 All data is stored locally in your browser's `localStorage`:
 - **tasks** - Your daily quests
-- **habits** - Habit definitions and progress
+- **habits** - Habit definitions and progress  
 - **dailyProgress** - Historical completion data
 - **lifetimeXP** - Cumulative experience points
 
