@@ -2,7 +2,7 @@
 
 A cyberpunk/gaming-themed productivity tracker with daily to-dos, habit tracking, and visual analytics. Built with vanilla JavaScript, featuring smooth animations and a distraction-free UI perfect for gamers.
 
-## ✨ Features
+## ✨ Features  
 
 ### 📜 Daily Quests (To-Do List)
 - **Add, Edit, Delete Tasks** - Full CRUD functionality  
